@@ -39,12 +39,9 @@ A RESTful backend API for managing student grades, courses, teachers, and enroll
    ```bash
    # Development mode with auto-restart
    npm run dev
-   
-   # Production mode
-   node index.js
    ```
 
-The API will be available at `http://localhost:3000`
+The API Endpoints will be availble at `http://localhost:3000`
 
 ## API Endpoints
 
@@ -210,16 +207,16 @@ curl http://localhost:3000/student
 ### Project Structure
 ```
 human-written/
-├── index.js              # Main server file
-├── db.js                 # Database connection
-├── seed.js               # Database seeding
-├── models/               # Mongoose schemas
+├── index.js              # Main file
+├── db.js                 # Connecting to and from the database
+├── seed.js               # This file has all seeding data
+├── models/               # All models found in this folder
 │   ├── student.js
 │   ├── teacher.js
 │   ├── course.js
 │   ├── enrollment.js
 │   └── grade.js
-├── routes/               # API routes
+├── routes/               # All routes found in this folder
 │   ├── student_routes.js
 │   ├── teacher_routes.js
 │   ├── course_routes.js
@@ -234,6 +231,28 @@ human-written/
 - **CORS** - Cross-origin resource sharing enabled
 - **Input Validation** - Comprehensive schema validation with regex patterns
 - **Error Handling** - Centralized error handling with proper status codes
+
+## Dependencies Used
+
+- **[Express.js](https://expressjs.com/)** - Minimal Web Application Framework that provides features for web and mobile applications 
+- **[Mongoose](https://mongoosejs.com/)** - Provides an Object Data Modeling library for MongoDB and Node.js. Provides schema-based solution.
+- **[CORS](https://www.npmjs.com/package/cors)** - Express middleware that can be used to enable Cross-Origin Resource Sharing (CORS) with various options
+- **[dotenv](https://www.npmjs.com/package/dotenv)** - Zero-dependency module that loads environment variables from a `.env` file
+- **[Helmet](https://www.npmjs.com/package/helmet)** - Helps secure Express apps by setting HTTP response headers
+
+## Hardware Requirements
+
+### Minimum Requirements
+
+- **CPU** - Intel Core i3 or AMD Ryzen 3 - 2 Cores. 2.0GHz
+- **RAM** - 4GB minimum, 8GB recommended
+
+## Software Requirements
+
+- **OS** - Windows 10+, macOS 10.15+, or Ubuntu 18.04+
+- **Node.js** - v16 or higher
+- **MongoDB** - Local or cloud instance
+- **npm** - For package management
 
 ## Data Validation
 
