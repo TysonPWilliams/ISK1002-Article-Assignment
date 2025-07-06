@@ -11,6 +11,8 @@ The repository contains two parallel implementations of the same backend system:
 - **/ai-generated/**: Codebase generated entirely by an AI tool (Cursor)
 - **/human-written/**: Codebase written manually by a student developer
 
+Each folder contains its own README.md for setup instructions.
+
 Each implementation provides CRUD operations for the following core entities:
 - Students
 - Teachers
